@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'docker --version'
+                sh 'python getCommit.py'
             }
         }
     }
