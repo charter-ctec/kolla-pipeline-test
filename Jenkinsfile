@@ -7,8 +7,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'cd /root/scripts'
-                sh 'python getCommit.py'
+                sh 'python /root/scripts/getCommit.py'
             }
         }
     }
