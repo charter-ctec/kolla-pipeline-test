@@ -1,8 +1,13 @@
 pipeline {
+    agent { 
+        node { 
+            label 'kolla_test' 
+        } 
+    }
     stages {
         stage('build') {
             steps {
-                sh 'openstack --version'
+                sh 'docker --version'
             }
         }
     }
