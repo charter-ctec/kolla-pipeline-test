@@ -8,8 +8,6 @@ pipeline {
         stage('build') {
             steps {
                 sh 'cd /root/scripts'
-            }
-            steps {
                 sh 'python getCommit.py'
             }
         }
